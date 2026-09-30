@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubuntu | Ubuntu + KDE Plasma</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes legibles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos sencillos vía Unicode/estilos -->
+</head>
+<body>
+    <!-- Navegación fija -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="nav-logo" aria-label="Ir a inicio">
+                <img src="img/kubuntu-logo.png" alt="Logo de Kubuntu" class="logo-img">
+                <span>Kubuntu</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#que-es">¿Qué es?</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#kde-plasma">KDE Plasma</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li><a href="#imagenes">Imágenes</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#descargar">Descargar</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. PORTADA -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Kubuntu</h1>
+                    <h2>"Ubuntu + KDE Plasma"</h2>
+                    <p class="hero-description">
+                        Kubuntu es una distribución GNU/Linux oficial de Ubuntu que utiliza el entorno de escritorio KDE Plasma.
+                        Combina la estabilidad de Ubuntu con la belleza, flexibilidad y gran capacidad de personalización de Plasma.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://kubuntu.org/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Página oficial</a>
+                        <a href="https://kubuntu.org/download/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Descargar Kubuntu</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/kubuntu-desktop.jpg" alt="Escritorio de Kubuntu con KDE Plasma" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ¿QUÉ ES KUBUNTU? -->
+        <section id="que-es" class="section">
+            <div class="container">
+                <h2 class="section-title">¿Qué es Kubuntu?</h2>
+                <div class="card">
+                    <p>
+                        <strong>Kubuntu</strong> es una distribución GNU/Linux <em>flavor</em> (variante oficial) de Ubuntu, desarrollada y mantenida por la comunidad de Kubuntu junto con el equipo de Canonical/Ubuntu.
+                    </p>
+                    <p>
+                        Es una distribución <strong>GNU/Linux</strong>, lo que significa que utiliza el núcleo Linux junto con herramientas del proyecto GNU y software libre.
+                    </p>
+                    <p>
+                        Su <strong>relación con Ubuntu</strong> es directa: Kubuntu toma la base sólida, el repositorio, los ciclos de lanzamiento y el soporte de Ubuntu, pero reemplaza el entorno de escritorio por <strong>KDE Plasma</strong>.
+                    </p>
+                    <p>
+                        <strong>KDE Plasma</strong> es el entorno de escritorio principal de Kubuntu. Ofrece una interfaz moderna, altamente personalizable y centrada en la productividad.
+                    </p>
+                    <p>
+                        <strong>¿Para quién es apropiado?</strong> Está indicado para usuarios que buscan facilidad de uso, elegancia, gran capacidad de personalización y un flujo de trabajo productivo, tanto para uso doméstico, educativo o profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. INFORMACIÓN GENERAL -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Información general</h2>
+                <div class="table-wrapper">
+                    <table class="info-table">
+                        <tbody>
+                            <tr><th>Nombre</th><td>Kubuntu</td></tr>
+                            <tr><th>Fecha de lanzamiento inicial</th><td>Octubre de 2004</td></tr>
+                            <tr><th>Desarrollador/comunidad responsable</th><td>Comunidad de Kubuntu (Kubuntu Team), con apoyo de Ubuntu/Canonical</td></tr>
+                            <tr><th>Base</th><td>Ubuntu (repositorios y sistema base)</td></tr>
+                            <tr><th>Entorno de escritorio principal</th><td>KDE Plasma</td></tr>
+                            <tr><th>Licencia</th><td>Principalmente software libre (GPL/LGPL y otras licencias libres). Incluye componentes libres siguiendo Ubuntu.</td></tr>
+                            <tr><th>Arquitecturas compatibles</th><td>AMD64 (x86_64) para la ISO de escritorio de la versión actual.</td></tr>
+                            <tr><th>Sitio web oficial</th><td><a href="https://kubuntu.org/" target="_blank" rel="noopener noreferrer">https://kubuntu.org/</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. HISTORIA -->
+        <section id="historia" class="section">
+            <div class="container">
+                <h2 class="section-title">Historia</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Octubre de 2004</div>
+                        <div class="timeline-content card">
+                            <h3>Aparición de Kubuntu</h3>
+                            <p>Kubuntu nace como la variante oficial de Ubuntu con KDE como entorno de escritorio, buscando ofrecer una alternativa elegante y personalizable desde los inicios de Ubuntu.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Razón de ser</div>
+                        <div class="timeline-content card">
+                            <h3>¿Por qué surgió?</h3>
+                            <p>Surgió para dar a los usuarios una opción oficial que combinara la base de Ubuntu con KDE Plasma, atendiendo a quienes preferían el flujo de trabajo y la filosofía de KDE.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Relación con Ubuntu</div>
+                        <div class="timeline-content card">
+                            <h3>Vinculación histórica</h3>
+                            <p>Kubuntu comparte lanzamientos, repositorios y ciclo con Ubuntu, diferenciándose principalmente en el escritorio (KDE Plasma) y selección de aplicaciones KDE.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Evolución</div>
+                        <div class="timeline-content card">
+                            <h3>Evolución de KDE</h3>
+                            <p>A lo largo del tiempo Kubuntu ha ido integrando las sucesivas versiones de KDE Plasma, pasando por KDE 3, KDE 4 y, actualmente, KDE Plasma 6, manteniendo su enfoque de usabilidad y personalización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ENTORNO DE ESCRITORIO -->
+        <section id="kde-plasma" class="section">
+            <div class="container">
+                <h2 class="section-title">Entorno de escritorio: KDE Plasma</h2>
+                <div class="card">
+                    <p><strong>KDE Plasma</strong> es un entorno de escritorio moderno, ligero, modular y altamente personalizable, desarrollado por la comunidad KDE.</p>
+                    <h3>Características principales</h3>
+                    <ul class="list">
+                        <li><strong>Personalización:</strong> casi todos los aspectos (temas, colores, bordes, efectos, iconos) pueden ajustarse a gusto del usuario.</li>
+                        <li><strong>Paneles y widgets:</strong> paneles flexibles y widgets (Plasmoids) que permiten añadir información, accesos y utilidades.</li>
+                        <li><strong>Menú de aplicaciones:</strong> lanzador de aplicaciones configurable (Kickoff/alternativas) para acceder rápido a programas y favoritos.</li>
+                        <li><strong>Gestión de ventanas:</strong> eficiente, con efectos opcionales, escritorios virtuales y reglas de ventanas.</li>
+                        <li><strong>Apariencia:</strong> moderna, limpia y con posibilidad de usar temas claros u oscuros y estilos visuales variados.</li>
+                    </ul>
+                    <p><strong>Diferencias generales frente a otros escritorios Linux:</strong> Plasma prioriza la personalización sin sacrificar usabilidad, ofrece gran integración con aplicaciones KDE y permite ajustar el escritorio a distintos estilos de trabajo.</p>
+                    <p><strong>Kubuntu utiliza KDE Plasma como su entorno de escritorio principal.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CARACTERÍSTICAS QUE LO DISTINGUEN -->
+        <section id="caracteristicas" class="section">
+            <div class="container">
+                <h2 class="section-title">Características que lo distinguen</h2>
+                <div class="cards-grid">
+                    <article class="feature-card">
+                        <div class="icon">🎨</div>
+                        <h3>Alta personalización</h3>
+                        <p>Permite adaptar paneles, widgets, temas y efectos según preferencias individuales.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">✨</div>
+                        <h3>Interfaz moderna</h3>
+                        <p>Diseño limpio y profesional, con experiencia fluida en distintos dispositivos.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">🧩</div>
+                        <h3>Integración con aplicaciones KDE</h3>
+                        <p>Excelente armonía entre Plasma y el ecosistema de aplicaciones KDE.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">🔓</div>
+                        <h3>Software libre y código abierto</h3>
+                        <p>Basado en principios de libertad, transparencia y colaboración comunitaria.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">🔗</div>
+                        <h3>Compatibilidad con el ecosistema Ubuntu</h3>
+                        <p>Hereda repositorios, paquetes .deb, actualizaciones y estabilidad de Ubuntu.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">📦</div>
+                        <h3>Gestión sencilla del software</h3>
+                        <p>Discover permite buscar, instalar y actualizar aplicaciones de forma intuitiva.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon">⚖️</div>
+                        <h3>Equilibrio entre facilidad y configuración</h3>
+                        <p>Sencillo por defecto y potente cuando se necesita personalizar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. APLICACIONES -->
+        <section id="aplicaciones" class="section">
+            <div class="container">
+                <h2 class="section-title">Aplicaciones</h2>
+                <p class="note">Nota: la selección puede variar según la versión de Kubuntu. Se distingue entre aplicaciones <strong>incluidas por defecto</strong> y <strong>disponibles para instalar</strong> en los repositorios.</p>
+                <div class="apps-grid">
+                    <article class="app-card">
+                        <h3>Dolphin</h3>
+                        <p><strong>Tipo:</strong> Incluida por defecto (típico). <br><strong>Función:</strong> Administrador de archivos moderno, rápido y potente.</p>
+                    </article>
+                    <article class="app-card">
+                        <h3>Konsole</h3>
+                        <p><strong>Tipo:</strong> Incluida por defecto. <br><strong>Función:</strong> Emulador de terminal flexible y personalizable.</p>
+                    </article>
+                    <article class="app-card">
+                        <h3>Discover</h3>
+                        <p><strong>Tipo:</strong> Incluida por defecto. <br><strong>Función:</strong> Centro de software para instalar, actualizar y gestionar aplicaciones.</p>
+                    </article>
+                    <article class="app-card">
+                        <h3>KDE Connect</h3>
+                        <p><strong>Tipo:</strong> Disponible para instalar (común en imágenes; puede no estar forzosa en todas las ediciones). <br><strong>Función:</strong> Integración con dispositivos Android/iOS para compartir archivos, notificaciones y más.</p>
+                    </article>
+                    <article class="app-card">
+                        <h3>LibreOffice</h3>
+                        <p><strong>Tipo:</strong> Disponible en repositorios; su inclusión por defecto puede variar entre versiones. <br><strong>Función:</strong> Suite ofimática completa y libre.</p>
+                    </article>
+                    <article class="app-card">
+                        <h3>Firefox</h3>
+                        <p><strong>Tipo:</strong> Navegador web presente en muchas versiones de Kubuntu (ver release notes de la versión específica). <br><strong>Función:</strong> Navegación web segura y moderna.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. VERSIONES -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Versiones</h2>
+                <div class="card">
+                    <p>Kubuntu sigue el <strong>sistema de versiones de Ubuntu</strong> con formato <code>AA.MM</code> (año.mes), acompañado de un nombre en clave.</p>
+                    <h3>Tipos de versiones</h3>
+                    <ul class="list">
+                        <li><strong>LTS (Long Term Support):</strong> versiones con soporte extendido (actualizaciones de seguridad y mantenimiento por varios años). Se publican cada 2 años, en abril. Ideales para estabilidad a largo plazo.</li>
+                        <li><strong>No LTS / intermedias:</strong> versiones publicadas cada 6 meses (abril y octubre). Ofrecen características más recientes, pero con soporte más corto. Orientadas a quienes desean lo último.</li>
+                    </ul>
+                    <h3>Versiones relevantes (referencia)</h3>
+                    <ul class="list">
+                        <li><strong>Kubuntu 26.04 LTS "Resolute Raccoon"</strong> (abril de 2026): última LTS con Plasma 6 y soporte extendido (hasta abril de 2029, según información oficial).</li>
+                        <li><strong>Kubuntu 25.10</strong> (octubre de 2025): versión intermedia con lo más reciente de KDE Plasma/Qt (soporte hasta julio de 2026).</li>
+                        <li><strong>Kubuntu 24.04 LTS</strong> (abril de 2024): LTS anterior con Plasma 5 (soporte hasta abril de 2027).</li>
+                    </ul>
+                    <p class="small-note">Consulte siempre las <a href="https://kubuntu.org/news/" target="_blank" rel="noopener noreferrer">notas de lanzamiento oficiales</a> para datos actualizados de cada versión.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. IMÁGENES -->
+        <section id="imagenes" class="section">
+            <div class="container">
+                <h2 class="section-title">Imágenes</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-item" data-src="img/kubuntu-desktop.jpg" data-alt="Escritorio de Kubuntu con KDE Plasma">
+                        <img src="img/kubuntu-desktop.jpg" alt="Escritorio de Kubuntu con KDE Plasma" loading="lazy">
+                        <figcaption>Escritorio de Kubuntu - KDE Plasma</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-src="img/kubuntu-1.jpg" data-alt="Captura de pantalla de Kubuntu 1">
+                        <img src="img/kubuntu-1.jpg" alt="Captura de Kubuntu" loading="lazy">
+                        <figcaption>Vista del entorno Plasma</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-src="img/kubuntu-2.jpg" data-alt="Captura de pantalla de Kubuntu 2">
+                        <img src="img/kubuntu-2.jpg" alt="Captura de Kubuntu" loading="lazy">
+                        <figcaption>Aplicaciones y panel</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-src="img/kubuntu-3.jpg" data-alt="Captura de pantalla de Kubuntu 3">
+                        <img src="img/kubuntu-3.jpg" alt="Captura de Kubuntu" loading="lazy">
+                        <figcaption>Personalización y apariencia</figcaption>
+                    </figure>
+                </div>
+                <p class="small-note">Si alguna imagen no está disponible localmente, puede sustituirse por capturas oficiales de <a href="https://kubuntu.org/" target="_blank" rel="noopener noreferrer">kubuntu.org</a> respetando derechos de autor.</p>
+            </div>
+        </section>
+
+        <!-- 10. VIDEOS DE YOUTUBE -->
+        <section id="videos" class="section">
+            <div class="container">
+                <h2 class="section-title">Reviews en español</h2>
+                <p class="note">Análisis y reseñas de Kububuntu en español publicados en YouTube.</p>
+                <div class="videos-grid">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Yncvz9wxywY" title="Kubuntu 26.04 Resolute Raccoon: ¿La mejor versión LTS hasta la fecha? | Review Completa" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="video-caption">Kubuntu 26.04 LTS "Resolute Raccoon": review completa — Máquinas Linuxeras</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/O6LRf1kpcrw" title="Kubuntu 26.04 Review español - Todas las novedades" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="video-caption">Kubuntu 26.04: todas las novedades — De Windows a Linux</p>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/CgsaDV3qzr0" title="Kubuntu | Análisis del sistema operativo | software, interfaz y configuración" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="video-caption">Kubuntu: análisis del sistema operativo, software, interfaz y configuración — Jusdeit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. DESCARGA -->
+        <section id="descargar" class="section cta-section">
+            <div class="container">
+                <h2 class="section-title">¿Quieres probar Kubuntu?</h2>
+                <div class="card centered">
+                    <p>Kubuntu es gratuito, fácil de probar desde un USB sin instalarlo y está listo para usar en tu equipo.</p>
+                    <div class="hero-buttons">
+                        <a href="https://kubuntu.org/download/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Descargar Kubuntu</a>
+                        <a href="https://kubuntu.org/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">Sitio oficial</a>
+                    </div>
+                    <p class="small-note">Enlaces a páginas oficiales de Kubuntu.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 15. PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Kubuntu</h3>
+                <p class="footer-desc">Distribución GNU/Linux oficial de Ubuntu con KDE Plasma. Estable, moderna y altamente personalizable.</p>
+            </div>
+            <div>
+                <h4>Enlaces oficiales</h4>
+                <ul>
+                    <li><a href="https://kubuntu.org/" target="_blank" rel="noopener noreferrer">Página oficial</a></li>
+                    <li><a href="https://kubuntu.org/download/" target="_blank" rel="noopener noreferrer">Página de descarga</a></li>
+                    <li><a href="https://kubuntu.org/news/" target="_blank" rel="noopener noreferrer">Noticias</a></li>
+                    <li><a href="https://kubuntu.org/about/" target="_blank" rel="noopener noreferrer">Acerca de</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Créditos</h4>
+                <p>Autor del trabajo: <strong>Tomas Alejandro Cortés</strong></p>
+                <p>Año: <strong>2026</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 - Sitio web sobre Kubuntu | Creado con HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Botón Volver arriba -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            <img src="" alt="" id="modalImage">
+            <p id="modalCaption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
